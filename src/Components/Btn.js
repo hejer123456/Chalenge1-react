@@ -1,9 +1,12 @@
 
 import './Btn.css'
-function Btn() {
+function Btn({name,children}) {
   return (
     <div >
-      <button className="btnStyle"> Click Me</button>
+      <button className="btnStyle"> 
+      {name}
+      <div>{children}</div>
+      </button>
     </div>
   )
 }

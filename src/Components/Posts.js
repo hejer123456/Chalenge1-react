@@ -1,5 +1,5 @@
 
-function Posts() {
+function Posts({name,email,children}) {
   return (
     <>
     <div style={
@@ -9,9 +9,10 @@ function Posts() {
         textAlign:"center",
       
         }}>
-      <h3>This is the post title</h3>
+      <h3>{name}</h3>
       <hr style={{width:"95%"}}></hr>
-      <h6 style={{color:"gray"}}>This is the post body</h6>
+      <h6 style={{color:"gray"}}>{email}</h6>
+      {children}
     </div>
    
     </>  
