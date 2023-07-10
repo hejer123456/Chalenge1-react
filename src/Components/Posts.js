@@ -1,5 +1,5 @@
 
-function Posts(name,email) {
+function Posts() {
   return (
     <>
     <div style={
